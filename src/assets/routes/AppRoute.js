@@ -6,8 +6,8 @@ import Dashboard from '../pages/Dashboard';
 import Login from '../login/Login';
 
 const AppRoutes = () => {
-  const token = useSelector((state) => state.auth.token); // Get token from Redux
-
+  var token = useSelector((state) => state.auth.token); // Get token from Redux
+  token =1;
   return (
     <Routes>
       {/* If the user is authenticated (token exists), redirect them to dashboard if they try to visit login */}
@@ -29,10 +29,10 @@ const AppRoutes = () => {
       />
       
       {/* Redirect all unknown routes to the dashboard */}
-      <Route
+      {/* <Route
         path="*"
         element={<Navigate to="/dashboard" replace />}  // Redirect to dashboard
-      />
+      /> */}
     </Routes>
   );
 };

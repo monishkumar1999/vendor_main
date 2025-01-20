@@ -14,11 +14,11 @@ const Sidebar = () => {
   const menuItems = [
     { key: 'dashboard', label: 'Dashboard', path: '/dashboard', icon: <FaTachometerAlt /> },
     {
-      key: 'users',
-      label: 'Users',
+      key: 'Master',
+      label: 'Master',
       icon: <FaUsers />,
       submenu: [
-        { key: 'all-users', label: 'All Users', path: '/users/all', icon: <FaUserAlt /> },
+        { key: 'all-users', label: 'Add Describe', path: '/describe', icon: <FaUserAlt /> },
         { key: 'add-user', label: 'Add User', path: '/users/add', icon: <FaUserAlt /> },
       ],
     },
